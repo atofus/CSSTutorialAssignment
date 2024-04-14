@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: #ccc;
+  }
+  
+  article {
+    width: 210mm;
+    height: 297mm;
+    margin: 20px auto;
+    position: relative;
+  }
+  
+  address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  /* Your CSS below here */
+  article {
+    /* Fixes the top image to the top of the letter */
+    background: url("top-image.png") top no-repeat,
+    /* Fixes the bottom image to the bottom of the letter */
+    url("bottom-image.png") bottom no-repeat,
+    /* Adds a semi-transparent gradient over the top of both 
+    of the previous backgrounds that gives the letter a bit of texture. 
+    Make it slightly dark right near the top and bottom, but completely transparent for a large part of the center. */
+    /* Start from the top.*/
+    linear-gradient(to bottom, gray, white 20%, white 80%, gray);
+    background-color: white;
+    /* Add a 1mm top and bottom solid border to the letter, in a color that is in keeping with the rest of the color scheme. */
+    border-top: 1mm solid red;
+    border-bottom: 1mm solid red;
+  }
+
+  h1 {
+    /* To the h1, add the logo as a background image.*/
+    background: url("logo.png") no-repeat;
+    /*Add a filter to the logo to give it a subtle drop shadow.*/
+    /* filter: drop-shadow(5px 5px 4px black); */
+    /*Now comment out the filter and implement the drop shadow in a different 
+    (slightly more cross-browser compatible) way, which still follows the shape of the round image.*/
+    box-shadow: 5px 5px 5px 2px black;
+    border-radius: 50%;
+  }
