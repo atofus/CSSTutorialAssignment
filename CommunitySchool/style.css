@@ -1,0 +1,177 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  /*download a couple of free-to-use fonts. Because this is a college, 
+  the fonts should be chosen to give the page a fairly serious, formal, 
+  trustworthy feel: a serif site-wide font for the general body text, coupled with 
+  a sans-serif or slab serif for the headings might be nice.*/
+  @font-face {
+    font-family: 'serif_font';
+    src: url('fonts/BodoniFLF-Roman.ttf format');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'sans-serif_font';
+    src: url('fonts/abel-regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /*Give your body text some letter-spacing and word-spacing, as appropriate.*/
+  body {
+    font-family: 'sans-serif_font', "Times New Roman", serif;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+  }
+   
+  /*Apply your body font to the whole page, and your heading font to your headings*/
+  /* vGive the page a site-wide font-size of 10px. */
+  html {
+    font-size: 10px;
+  }
+  
+  /* Give your headings a little bit of letter-spacing to make them not too squashed, and allow the letters to breathe a bit. */
+  h1,
+  h2 {
+    font-family: 'serif_font', cursive;
+  }
+  
+  h1 {
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+  }
+
+  /* Give the first paragraph after each heading in the <section> a little bit of text-indentation, say 20px. */
+  section h2 + p {
+    text-indent: 20px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    letter-spacing: .5px;
+    word-spacing: .5px;
+  }
+  
+  
+  /* LINK STYLING  */
+  
+  a {
+    outline: none;
+  }
+  
+  /* Give the link, visited, focus, and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page. */
+  a:link {
+    color: rgb(206, 116, 116);
+  }
+  
+  a:visited {
+    color: purple;
+  }
+  
+  /* Make it so that links are underlined by default, but when you hover or focus them the underline disappears. */
+  a:focus,
+  a:hover {
+    text-decoration: none;
+    color: cadetblue;
+  }
+  
+  /* Give the active state a noticeably different styling so it stands out nicely, but make it still fit in with the overall page design. */
+  a:active {
+    color: orange;
+    background-color: unset;
+  }
+  
+  /* Make it so that external links have the external link icon inserted next to them. */
+  a[href^="http"] {
+    background: url("external-link-52.png") 
+                no-repeat 100%;
+    background-size: 1.3rem 1.3rem;
+    padding-right: 1.5rem;
+  }
+
+    /* LIST */
+  
+    /* Each list item should have the same line-height as a paragraph line, 
+    and each list should have the same spacing at its top and bottom as you have between paragraphs */
+    ul, 
+    ol {
+      font-size: 1.6rem;
+      letter-spacing: .5px;
+      line-height: 1.6;
+      word-spacing: .5px;
+    }
+    
+    ul {
+      list-style-type: square;
+    }
+  
+  /* NAVIGATION  */
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav li {
+    margin: 1rem;
+  }
+  
+  nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid rgb(215, 117, 117);
+    font-size: 2rem;
+  }

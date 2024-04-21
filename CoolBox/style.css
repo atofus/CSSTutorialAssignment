@@ -16,7 +16,7 @@ html {
     vertical-align: middle;
     line-height: 150px;
     /*  font size, to around 17-18 pixel computed style */
-    /* */
+    /* For me to find out how much 18px is in rem, I just went into a calculator that calculates this. */
     font-size: 1.12rem;
     /* Give the box this color as its background color. */
     background-color: red;
